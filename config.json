@@ -1,0 +1,4 @@
+{
+    "initialMessage": "Bienvenido a la Calculadora Avanzada",
+    "operations": ["suma", "resta", "multiplicacion", "division", "porcentaje"]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avanzada</title>
+    <!-- Agregar Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .message {
+            color: red;
+        }
+        .welcome-message {
+            color: green;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="welcomeMessage" class="welcome-message"></div>
+        <h1 id="titulo">Calculadora Avanzada</h1>
+        <div class="form-group">
+            <label for="operacion">Operación:</label>
+            <select id="operacion" class="form-control"></select>
+        </div>
+        <div class="form-group">
+            <label for="num1">Primer Número:</label>
+            <input type="number" id="num1" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="num2">Segundo Número:</label>
+            <input type="number" id="num2" class="form-control">
+        </div>
+        <button id="calcularBtn" class="btn btn-primary">Calcular</button>
+        <h2 id="resultado" class="mt-4"></h2>
+        <h3>Historial de Resultados</h3>
+        <ul id="historial" class="list-group"></ul>
+        <div class="message" id="message"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
